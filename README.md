@@ -4,7 +4,7 @@ Sui Overflow 2026 中文区参赛项目统一提交仓库 / Central repository f
 
 ## Quick Links / 快速入口
 
-- [赛道介绍 / Tracks](tracks.md)
+- [赛道介绍 / Tracks](tracks/)
 - [参赛指南 / Guide](guide.md)
 - [项目提交模板 / Submission Template](submissions/_template/README.md)
 
@@ -26,14 +26,12 @@ submissions/
 
 ## Tracks / 赛道
 
-| Track | 赛道 |
-|-------|------|
-| DeFi & Payments | 去中心化金融与支付 |
-| Agentic Web (AI) | AI 智能体与 Web3 |
-| DeepBook | DeepBook 链上订单簿 |
-| Walrus | Walrus 去中心化存储 |
-
-详细说明见 [tracks.md](tracks.md)
+| Track | 赛道 | 详情 |
+|-------|------|------|
+| DeFi & Payments | 去中心化金融与支付 | [查看](tracks/defi-payments.md) |
+| Agentic Web (AI) | AI 智能体与 Web3 | [查看](tracks/agentic-web.md) |
+| DeepBook | DeepBook 链上订单簿 | [查看](tracks/deepbook.md) |
+| Walrus | Walrus 去中心化存储 | [查看](tracks/walrus.md) |
 
 ## Prizes / 奖励
 
