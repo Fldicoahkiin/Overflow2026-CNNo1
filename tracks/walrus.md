@@ -66,3 +66,4 @@ As agents evolve from simple assistants to autonomous, long-running systems, the
 ## 学习资源 / Learning Resources
 
 - [Let's Walrus](https://github.com/hoh-zone/lets-walrus) — Walrus 中文入门教程
+- [Walrus 中文参考文档](https://hoh-zone.github.io/intro-walrus) — Walrus 概念与入门

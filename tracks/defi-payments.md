@@ -109,3 +109,4 @@ Sui 引入了一种根本不同的金融系统构建模型：
 ## 学习资源 / Learning Resources
 
 - [Learning Sui](https://hoh-zone.github.io/learning-sui/) — Sui 中文教程（Move 语言、对象模型、PTB、Coin/NFT 等）
+- [DeFi 中文参考文档](https://hoh-zone.github.io/intro-defi) — DeFi 概念与入门

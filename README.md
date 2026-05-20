@@ -108,6 +108,11 @@ submissions/
 - [DeepBook Bootcamp](https://github.com/hoh-zone/deepbook-bootcamp) — DeepBook 中文实战教程（适用 DeepBook 赛道）
 - [Let's Walrus](https://github.com/hoh-zone/lets-walrus) — Walrus 中文入门教程（适用 Walrus 赛道）
 
+**中文参考文档：**
+- [Walrus 中文参考文档](https://hoh-zone.github.io/intro-walrus) — Walrus 概念与入门
+- [DeepBook 中文参考文档](https://hoh-zone.github.io/intro-deepbook) — DeepBook 概念与入门
+- [DeFi 中文参考文档](https://hoh-zone.github.io/intro-defi) — DeFi 概念与入门
+
 **赛道 Problem Statements：**
 - [Agentic Web](https://mystenlabs.notion.site/agentic-web-problem-statement)
 - [DeFi & Payments](https://mystenlabs.notion.site/defi-payments-problem-statement)
