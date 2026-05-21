@@ -94,3 +94,4 @@ Prediction markets today are powerful, but still fundamentally fragmented and sh
 ## 学习资源 / Learning Resources
 
 - [DeepBook Bootcamp](https://github.com/hoh-zone/deepbook-bootcamp) — DeepBook 中文实战教程
+- [DeepBook 中文参考文档](https://hoh-zone.github.io/intro-deepbook) — DeepBook 概念与入门
