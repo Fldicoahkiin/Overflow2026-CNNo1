@@ -27,7 +27,7 @@ PunchPredict 是基于 ONE Championship 拳赛 prop 的 Sui 原生预测市场�
 ## Deployment / 部署信息
 
 - Env: Testnet
-- Package ID: `（Move package publish queued for next milestone — current demo flow mints Bet objects via real Sui Testnet PTBs signed by 0xd3ac…1200）`
+- Package ID: N/A — live demo is deployed on Testnet and uses native Sui PTBs; no standalone Move package is published yet.
 
 ## Swag / 周边
 

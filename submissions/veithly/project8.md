@@ -27,7 +27,7 @@ SplitRail 是 Sui 原生的工资单/AA 账单轨道。一笔 PTB 把一枚 coin
 ## Deployment / 部署信息
 
 - Env: Testnet
-- Package ID: `（Move package publish queued for next milestone — current demo settles split PTBs on Sui Testnet via 0xd3ac…1200, producing real on-chain digests）`
+- Package ID: N/A — live demo is deployed on Testnet and uses native Sui PTBs; no standalone Move package is published yet.
 
 ## Swag / 周边
 

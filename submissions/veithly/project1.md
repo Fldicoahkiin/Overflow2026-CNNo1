@@ -27,7 +27,7 @@ InstantRent 把租约变成 Sui 上的秒级现金流。租客扫码充值未来
 ## Deployment / 部署信息
 
 - Env: Testnet
-- Package ID: `（Move package publish queued for next milestone — current demo flow uses real Sui Testnet PTBs signed by the hosted trial wallet 0xd3ac…1200）`
+- Package ID: N/A — live demo is deployed on Testnet and uses native Sui PTBs; no standalone Move package is published yet.
 
 ## Swag / 周边
 

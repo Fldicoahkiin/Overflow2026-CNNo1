@@ -1,5 +1,7 @@
 # SmolAgent / 智能代理矩阵
 
+> Submission note / 提交说明: this `README.md` is project 1 of 10 in this folder; the remaining nine projects are in `project1.md` through `project9.md`.
+
 ## Track / 赛道
 
 - [x] Agentic Web
@@ -27,7 +29,7 @@ SmolAgent 把链上杂活变成"按需雇佣"。每个 agent 都是 1 SUI 铸造
 ## Deployment / 部署信息
 
 - Env: Testnet
-- Package ID: `（Move package publish queued for next milestone — current demo flow uses real Sui Testnet PTBs signed by the hosted trial wallet 0xd3ac…1200）`
+- Package ID: N/A — live demo is deployed on Testnet and uses native Sui PTBs; no standalone Move package is published yet.
 
 ## Swag / 周边
 

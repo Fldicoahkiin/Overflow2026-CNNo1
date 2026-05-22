@@ -27,7 +27,7 @@ TxTrace 是 Sui 开发者一直想要的内置 DevTools 面板。粘贴任意 Te
 ## Deployment / 部署信息
 
 - Env: Testnet
-- Package ID: `（read-only on-chain analyzer — TxTrace decodes existing Sui Testnet packages, no new Move publish required）`
+- Package ID: N/A — read-only analyzer over existing Sui Testnet packages; this project does not publish its own standalone Move package.
 
 ## Swag / 周边
 

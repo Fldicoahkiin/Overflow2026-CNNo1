@@ -27,7 +27,7 @@ DripDeep 是 Sui 上第一个面向散户的条件式 DCA 工具。市面上 DCA
 ## Deployment / 部署信息
 
 - Env: Testnet
-- Package ID: `（Move package publish queued for next milestone — current demo mints Strategy objects via real Sui Testnet PTBs signed by 0xd3ac…1200, fed into a DeepBook order path）`
+- Package ID: N/A — live demo is deployed on Testnet and uses native Sui PTBs; no standalone Move package is published yet.
 
 ## Swag / 周边
 
