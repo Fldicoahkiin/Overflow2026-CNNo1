@@ -9,15 +9,18 @@
 
 ## Description / 项目简介
 
-面向 Walrus 去中心化存储的跨平台桌面文件管理控制台(Tauri 2.0 + React)。拖拽上传、即时预览、搜索、标签、版本、文件夹、回收站、一键复制聚合器分享链接;多账号本地钱包。文件元数据上 Sui(Move 对象)、blob 数据上 Walrus,无中心化后端。本地 Ed25519 钱包在进程内签名,无需浏览器插件。另附 MCP Server,让开发者 / AI 客户端用 CLI 操作同一份 Walrus 数据。
+面向 Walrus 去中心化存储的跨平台桌面文件管理控制台(Tauri 2.0 + React),为 AI agent 在 Walrus 上存储的数据而做。拖拽上传(多文件)、即时预览(md/json/图片/PDF/视频)、搜索、标签、**链上版本历史 + 一键回滚**、嵌套文件夹、回收站、**Walrus Blob 生命周期(续期/删除回收)**;多账号本地钱包。文件元数据上 Sui(Move 对象)、blob 字节上 Walrus,无中心化后端。本地 Ed25519 钱包在进程内签名,无需浏览器插件。MCP Server 作为 agent 写入口,让 AI 客户端 / CLI 操作同一份 Walrus 数据。全平台安装包(macOS / Windows / Linux)由 CI 自动构建。
 
-A cross-platform desktop console (Tauri 2.0 + React) for Walrus decentralized storage: drag-to-upload, instant preview, search, tags, versioning, folders, trash, and one-click share links, with a multi-account local wallet. File metadata lives on Sui (Move objects) and blob data on Walrus, with no centralized backend. A local Ed25519 keypair signs transactions in-process — no browser extension. A bundled MCP server lets developers and AI clients operate the same Walrus data from the CLI.
+A cross-platform desktop console (Tauri 2.0 + React) for the data your AI agents store on Walrus: multi-file drag-to-upload, instant preview (md/json/image/pdf/video), search, tags, **on-chain version history with one-click rollback**, nested folders, trash, and **Walrus blob lifecycle (renew / delete to reclaim)**, with a multi-account local wallet. File metadata lives on Sui (Move objects) and blob bytes on Walrus, with no centralized backend. A local Ed25519 keypair signs in-process, no browser extension. An MCP server is the agent write-path, letting AI clients and CLIs operate the same Walrus data. Cross-platform installers (macOS / Windows / Linux) are built by CI.
 
 ## Links / 链接
 
+- Website / 官网: https://waldrive.flacier.com/
+- Live demo (browser) / 在线体验: https://waldrive.flacier.com/app
 - GitHub: https://github.com/Fldicoahkiin/WalDrive
-- Demo Video: 即将补充 / coming soon
-- Website: -
+- Downloads (macOS / Windows / Linux) / 全平台下载: https://github.com/Fldicoahkiin/WalDrive/releases/latest
+- Demo Video: https://drive.google.com/file/d/14RgazChCiweFQdumeEBqsWY363ocQRPB/view
+- DeepSurge: https://www.deepsurge.xyz/projects/c13d586b-9a0a-4d77-b827-d5e6b3374a47
 
 ## Team / 团队成员
 
