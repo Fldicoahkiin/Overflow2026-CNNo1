@@ -1,25 +1,34 @@
 # LadderVault
 
+> **Active risk-managed LP vault for DeepBook Predict.** A quant concentration signal cuts worst-case LP drawdown by 82% — no directional bets. Live on Sui testnet with real end-to-end transactions.
+> **DeepBook Predict 上的主动风险管理 LP 金库**:用量化集中度信号把 LP 最坏回撤削掉 82%,不赌方向。已部署 Sui testnet,链上端到端交易跑通。
+
 ## Track / 赛道
 
 - [ ] Agentic Web
 - [ ] DeFi & Payments
-- [x] DeepBook
+- [x] **DeepBook**
 - [ ] Walrus
 
 ## Description / 项目简介
 
-**LadderVault is an active risk-managed LP vault for DeepBook Predict.**
+**Problem.** Passive LPs in prediction markets earn making fees but are *passive*: when traders concentrate positions on a hot strike and price pins there, those positions settle in-the-money together and the LP eats an asymmetric tail loss it cannot dodge.
 
-Passive prediction-market LPs earn making fees but are *passive*: when traders pile positions onto a hot strike and the price pins there, those positions settle in the money together and the LP eats an asymmetric tail loss. LadderVault monitors a **concentration signal** (`pin_risk` = payout at the current price level ÷ total inventory) and **automatically withdraws** from Predict when risk spikes, re-entering once it subsides. In our offline kill-test this cuts the worst-case drawdown from **-13.4% (passive) to -0.1% (active) — an 82% tail reduction that approaches the look-ahead Oracle upper bound — without any directional prediction.**
+**Solution.** LadderVault is an actively risk-managed LP vault. It monitors a **concentration signal** — `pin_risk` = payout at the current price / total inventory — and **automatically withdraws** liquidity from Predict when concentration spikes, re-entering (with hysteresis) once it subsides.
 
-**（中文）** LadderVault 是 DeepBook Predict 上的主动风险管理 LP 金库。被动 LP 在"价格黏在某热门行权价、库存集中中标"时被尾部赔付击穿;LadderVault 用集中度信号在风险堆积时自动从 Predict 撤出、平静后回场,把最坏回撤从 -13.4% 削到 -0.1%(削尾 82%,逼近先知上界),且不依赖任何方向性预测。量化护城河经完整链下验证,合约已部署 testnet 并跑通端到端交易。
+**Verified result — reproducible, not a claim.** In a faithful offline kill-test, the worst-case (price-pinned) scenario takes a **passive LP to -13.4%**, while the concentration-driven active strategy holds it at **-0.1% — an 82% tail reduction that approaches a look-ahead Oracle upper bound**. Reproduce in one command: `cd research && uv run python run_killtest.py`. Methodology and every assumption/limitation are written out in `docs/kill-test-design.md`.
+
+**Why this is real, not a mockup.** (1) Move contracts **deployed to Sui testnet** (package ID below, Explorer-verifiable). (2) A **real end-to-end on-chain transaction** runs the full story in one PTB: deposit -> traders push concentration to 80% -> vault auto-exits. (3) **Two Move unit tests pass**, covering the full lifecycle (deposit -> spike -> exit -> settlement-the-vault-dodged -> re-enter -> redeem >= principal). (4) The quant result is **reproducible from source**.
+
+**Sui integration depth.** Move **shared-object** vault + an `LV` share token minted/burned by NAV + **PTB-composed** `deposit`/`withdraw`/`rebalance`, with the LP interface **aligned to DeepBook Predict's `supply`/`withdraw`/range primitives**. The `predict_mock` module is a pragmatic stand-in *only because the official Predict on-chain indexer/oracle was not yet live during the hackathon* — its interface is already aligned and switching to real Predict is the first post-hackathon step. **Everything that is LadderVault's own — the Move contracts, the testnet deployment, the on-chain transactions — is real.**
+
+**(中文摘要)** 被动 LP 在"价格黏住热门行权价、库存集中中标"时被尾部赔付击穿;LadderVault 用集中度信号自动撤出/回场,链下杀手验证显示削尾 82%(逼近先知上界,可一键复现)。合约已部署 testnet、有真实端到端链上交易、2 个 Move 测试全过。Sui 集成:Move 共享对象金库 + LV 份额 token + PTB 组合的存取/再平衡,接口对齐 DeepBook Predict;predict_mock 仅因官方 Predict 链上设施赛期未就绪而作临时替代,接口已对齐、赛后即切。
 
 ## Links / 链接
 
-- GitHub: https://github.com/LambertAlpha/LadderVault
-- Demo Video: _(待录制 / TODO — YouTube, ≤ 5 min)_
-- DeepSurge: _(待补 / optional)_
+- **GitHub (code + tests + quant)**: https://github.com/LambertAlpha/LadderVault
+- **Demo Video**: _(TODO — YouTube, <= 5 min)_
+- DeepSurge: _(optional, TODO)_
 
 ## Team / 团队成员
 
@@ -27,12 +36,10 @@ Passive prediction-market LPs earn making fees but are *passive*: when traders p
 
 ## Deployment / 部署信息
 
-- Env: **Testnet**
+- Env: **Sui Testnet**
 - Package ID: `0x1f6134b78470a5d6818e956b53140850a2501f122839d80e6d8d60877e3cc52d`
-- Vault\<SUI\>: `0x0906b259c177763e0898fb8135b608938676de047bf153971d60fdf07034341b`
-- PredictPool\<SUI\>: `0xa9a8a407f4f1698e28a6290e0b800a2bbafed8012bf6587f2eafe0fa202ac17d`
-
-> 注:demo 使用对齐真实 DeepBook Predict 接口(`supply`/`withdraw`/range)的简化 `predict_mock`,因官方 Predict 链上设施在赛期尚未完成;赛后第一步即切换真实 Predict。
+- Vault (Explorer, 含真实交互历史): https://testnet.suivision.xyz/object/0x0906b259c177763e0898fb8135b608938676de047bf153971d60fdf07034341b
+- PredictPool: `0xa9a8a407f4f1698e28a6290e0b800a2bbafed8012bf6587f2eafe0fa202ac17d`
 
 ## Swag / 周边
 
