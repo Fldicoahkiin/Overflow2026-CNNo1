@@ -27,7 +27,7 @@
 ## Links / 链接
 
 - **GitHub (code + tests + quant)**: https://github.com/LambertAlpha/LadderVault
-- **Demo Video**: _(TODO — YouTube, <= 5 min)_
+- **Demo Video**: https://youtu.be/qb7lspMbuXY
 - DeepSurge: _(optional, TODO)_
 
 ## Team / 团队成员
