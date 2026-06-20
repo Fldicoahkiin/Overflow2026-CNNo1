@@ -38,7 +38,7 @@ Mandate enables a safer model for autonomous execution:
 
 - DeepSurge: https://www.deepsurge.xyz/projects/ed0a0bf8-ddfe-4bd6-ab38-204e76ba1a7a
 - GitHub: https://github.com/doggiek/mandate
-- Demo Video: In Progress
+- Demo Video: https://youtu.be/0ri2MwXb2GI
 - Website: https://usemandate.vercel.app/
 
 ## Team / 团队成员
